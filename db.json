@@ -1,0 +1,184 @@
+{
+  "tweets": [
+    {
+      "likes": 671,
+      "text": "Donec elementum, lorem ut aliquam iaculis, lacus pede sagittis",
+      "user": {
+        "name": "Marcia Elliott",
+        "username": "Marcia",
+        "img": "https://pbs.twimg.com/profile_images/1283786620521652229/lEODkLTh_reasonably_small.jpg"
+      },
+      "created_at": "17:32 May 5, 2021",
+
+      "tag": "Trump"
+    },
+    {
+      "likes": 666,
+      "text": "ultrices a, auctor non, feugiat nec, diam. Duis mi",
+      "user": {
+        "name": "Freya Roth",
+        "username": "Freya",
+        "img": "https://pbs.twimg.com/profile_images/1283786620521652229/lEODkLTh_reasonably_small.jpg"
+      },
+      "created_at": "00:52 Jan 2, 2020",
+
+      "tag": "Trump"
+    },
+    {
+      "likes": 5424,
+      "text": "Nam nulla magna, malesuada vel, convallis in, cursus et, eros.",
+      "user": {
+        "name": "Zeus Simon",
+        "username": "Zeus",
+        "img": "https://pbs.twimg.com/profile_images/1283786620521652229/lEODkLTh_reasonably_small.jpg"
+      },
+      "created_at": "19:15 Dec 19, 2020",
+
+      "tag": "Trump"
+    },
+    {
+      "likes": 5018,
+      "text": "risus. Quisque libero lacus, varius et, euismod et,",
+      "user": {
+        "name": "Clinton Bowman",
+        "username": "Clinton",
+        "img": "https://pbs.twimg.com/profile_images/1283786620521652229/lEODkLTh_reasonably_small.jpg"
+      },
+      "created_at": "22:48 Aug 17, 2020",
+
+      "tag": "Trump"
+    },
+    {
+      "likes": 4181,
+      "text": "imperdiet dictum magna. Ut tincidunt orci quis lectus. Nullam",
+      "user": {
+        "name": "Meghan Beasley",
+        "username": "Meghan",
+        "img": "https://pbs.twimg.com/profile_images/1283786620521652229/lEODkLTh_reasonably_small.jpg"
+      },
+      "created_at": "04:13 Nov 14, 2020",
+
+      "tag": "Trump"
+    },
+    {
+      "likes": 6689,
+      "text": "in, hendrerit consectetuer, cursus et, magna. Praesent interdum ligula",
+      "user": {
+        "name": "Ginger Olson",
+        "username": "Ginger",
+        "img": "https://pbs.twimg.com/profile_images/1283786620521652229/lEODkLTh_reasonably_small.jpg"
+      },
+      "created_at": "02:45 Dec 27, 2019",
+
+      "tag": "Trump"
+    },
+    {
+      "likes": 6732,
+      "text": "Donec nibh enim, gravida sit amet, dapibus id,",
+      "user": {
+        "name": "Armand Harper",
+        "username": "Armand",
+        "img": "https://pbs.twimg.com/profile_images/1283786620521652229/lEODkLTh_reasonably_small.jpg"
+      },
+      "created_at": "13:15 Sep 22, 2019",
+
+      "tag": "Trump"
+    },
+    {
+      "likes": 6836,
+      "text": "Class aptent taciti sociosqu ad litora torquent per conubia",
+      "user": {
+        "name": "Maya Prince",
+        "username": "Maya",
+        "img": "https://pbs.twimg.com/profile_images/1283786620521652229/lEODkLTh_reasonably_small.jpg"
+      },
+      "created_at": "01:15 May 2, 2021",
+
+      "tag": "Trump"
+    },
+    {
+      "likes": 5881,
+      "text": "molestie tortor nibh sit amet orci.",
+      "user": {
+        "name": "Phelan Mack",
+        "username": "Phelan",
+        "img": "https://pbs.twimg.com/profile_images/1283786620521652229/lEODkLTh_reasonably_small.jpg"
+      },
+      "created_at": "11:16 May 12, 2020",
+
+      "tag": "Trump"
+    },
+    {
+      "likes": 3581,
+      "text": "Nunc quis arcu vel quam dignissim pharetra. Nam ac",
+      "user": {
+        "name": "Mara Palmer",
+        "username": "Mara",
+        "img": "https://pbs.twimg.com/profile_images/1283786620521652229/lEODkLTh_reasonably_small.jpg"
+      },
+      "created_at": "19:22 Sep 4, 2020",
+
+      "tag": "Trump"
+    },
+    {
+      "likes": 1230,
+      "text": "nec mauris blandit mattis. Cras eget nisi dictum",
+      "user": {
+        "name": "Dexter Cain",
+        "username": "Dexter",
+        "img": "https://pbs.twimg.com/profile_images/1283786620521652229/lEODkLTh_reasonably_small.jpg"
+      },
+      "created_at": "19:22 Sep 4, 2020",
+
+      "tag": "Hillary"
+    },
+    {
+      "likes": 3191,
+      "text": "ante dictum mi, ac mattis velit justo",
+      "user": {
+        "name": "Gemma Jacobson",
+        "username": "Gemma",
+        "img": "https://pbs.twimg.com/profile_images/1283786620521652229/lEODkLTh_reasonably_small.jpg"
+      },
+      "created_at": "19:22 Sep 4, 2020",
+
+      "tag": "Hillary"
+    },
+    {
+      "likes": 3805,
+      "text": "Cras sed leo. Cras vehicula aliquet libero. Integer in",
+      "user": {
+        "name": "Blaine Lynch",
+        "username": "Blaine",
+        "img": "https://pbs.twimg.com/profile_images/1283786620521652229/lEODkLTh_reasonably_small.jpg"
+      },
+      "created_at": "19:22 Sep 4, 2020",
+
+      "tag": "Hillary"
+    },
+    {
+      "likes": 8571,
+      "text": "Fusce mollis. Duis sit amet diam",
+      "user": {
+        "name": "Bevis Reilly",
+        "username": "Bevis",
+        "img": "https://pbs.twimg.com/profile_images/1283786620521652229/lEODkLTh_reasonably_small.jpg"
+      },
+      "created_at": "19:22 Sep 4, 2020",
+
+      "tag": "Hillary"
+    },
+    {
+      "likes": 3897,
+      "text": "a, scelerisque sed, sapien. Nunc pulvinar arcu et",
+      "user": {
+        "name": "Prescott Daugherty",
+        "username": "Prescott",
+        "img": "https://pbs.twimg.com/profile_images/1283786620521652229/lEODkLTh_reasonably_small.jpg"
+      },
+      "created_at": "19:22 Sep 4, 2020",
+
+      "tag": "Hillary"
+    }
+  ]
+}
