@@ -1,6 +1,7 @@
-export const BASE_URL = "http://localhost:3000/";
+export const BASE_URL =
+  "https://cors-anywhere.herokuapp.com/https://api.twitter.com/2/";
 
 export const TAGS = [
-  { label: "Donald Trump", value: "Trump" },
-  { label: "Hilary Clinton", value: "Hillary" },
+  { label: "Donald Trump", value: "donald trump" },
+  { label: "Hillary Clinton", value: "hillary clinton" },
 ];
