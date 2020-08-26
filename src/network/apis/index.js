@@ -1,7 +1,6 @@
 import axios from "axios";
 import { BASE_URL } from "~utils/Constants";
 
-console.log({ ...process });
 export const axiosInstance = axios.create({
   baseURL: BASE_URL,
   headers: {

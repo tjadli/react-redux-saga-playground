@@ -1,6 +1,7 @@
 import * as types from "../types/Tag";
+import { TAGS } from "~utils/Constants";
 
-const INITIAL_STATE = "Trump";
+const INITIAL_STATE = TAGS[0].value;
 
 export default (state = INITIAL_STATE, action) => {
   switch (action.type) {

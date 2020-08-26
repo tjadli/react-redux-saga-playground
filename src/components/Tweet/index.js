@@ -1,6 +1,8 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import styled from "styled-components";
 import { FiHeart } from "react-icons/fi";
+import { FaRetweet } from "react-icons/fa";
 
 const Box = styled.div`
   text-align: left;
@@ -80,46 +82,72 @@ const Footer = styled.div`
   border-top-color: rgb(204, 214, 221);
   margin-top: 5px;
   padding-top: 5px;
+  display: flex;
+  flex-direction: row;
 `;
 
 const Likes = styled.div`
   color: rgb(101, 119, 134);
+  display: flex;
   justify-content: center;
   > span {
     margin-left: 10px;
+    margin-right: 15px;
   }
 `;
 
-export default ({ user, text, likes, created_at }) => (
-  <Box>
-    <Content>
-      <Header>
-        <Avatar>
-          <AvatarPhoto alt="Profile" src={user.img} />
-        </Avatar>
-        <HeaderContent>
-          <UserFullname>
-            <span>{user.name}</span>
-          </UserFullname>
-          <Username>
-            <span>@{user.username}</span>
-          </Username>
-        </HeaderContent>
-      </Header>
-      <Body>
-        <div>
-          <span>{text}</span>
-        </div>
-        <Time>
-          <span>{created_at}</span>
-        </Time>
-      </Body>
-      <Footer>
-        <Likes>
-          <FiHeart />
-          <span>{likes}</span>
-        </Likes>
-      </Footer>
-    </Content>
-  </Box>
-);
+export default ({ id }) => {
+  const {
+    author_id,
+    text,
+    created_at,
+    public_metrics: { like_count, retweet_count } = {},
+  } = useSelector((state) => state.tweets.entities.byId[id]);
+  const user = useSelector((state) => state.users.entities.byId[author_id]);
+
+  return (
+    <Box>
+      <Content>
+        <Header>
+          <Avatar>
+            <AvatarPhoto alt="Profile" src={user.profile_image_url} />
+          </Avatar>
+          <HeaderContent>
+            <UserFullname>
+              <span>{user.name}</span>
+            </UserFullname>
+            <Username>
+              <span>@{user.username}</span>
+            </Username>
+          </HeaderContent>
+        </Header>
+        <Body>
+          <div>
+            <span>{text}</span>
+          </div>
+          <Time>
+            <span>
+              {new Intl.DateTimeFormat("en-US", {
+                hour: "numeric",
+                minute: "numeric",
+                year: "numeric",
+                month: "long",
+                day: "2-digit",
+              }).format(new Date(created_at))}
+            </span>
+          </Time>
+        </Body>
+        <Footer>
+          <Likes>
+            <FiHeart />
+            <span>{like_count}</span>
+          </Likes>
+          <Likes>
+            <FaRetweet size={20} />
+            <span>{retweet_count}</span>
+          </Likes>
+        </Footer>
+      </Content>
+    </Box>
+  );
+};

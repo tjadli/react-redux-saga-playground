@@ -18,3 +18,15 @@ to start the json-server please use the command :
 ```
 json-server --watch db.json
 ```
+
+### Update: iteration 2
+
+in the current iteration, i added [normalizr](https://github.com/paularmstrong/normalizr) in order to structure the state, [immerJS](https://github.com/immerjs/immer) in order to have immutable state tree.
+
+moved from json-server to recent search in [Twitter Api 2.0](https://developer.twitter.com/en/docs/twitter-api/tweets/search/api-reference/get-tweets-search-recent)
+
+Implemented near real-time tweets updates
+
+##### Note
+
+https://cors-anywhere.herokuapp.com is used as a proxy as a workaround for the knows [CORS issue](https://twittercommunity.com/t/will-twitter-api-support-cors-headers-soon/28276/5) in the Twitter Api

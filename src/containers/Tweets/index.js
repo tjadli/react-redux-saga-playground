@@ -11,14 +11,24 @@ const Container = styled.div`
   align-items: center;
 `;
 
+const Loader = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+`;
+
 export default () => {
-  const tweets = useSelector((state) => state.tweets);
+  const tweets = useSelector((state) => state.tweets.allIds);
+  const loading = useSelector((state) => state.tweetsLoading);
   return (
     <Container>
       <TweetsHeader />
-      {tweets.map((tweet, i) => (
-        <Tweet key={i} {...tweet} />
-      ))}
+      {loading ? (
+        <Loader>loading....</Loader>
+      ) : (
+        tweets.map((id, i) => <Tweet key={i} id={id} />)
+      )}
     </Container>
   );
 };

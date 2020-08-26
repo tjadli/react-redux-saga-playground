@@ -1,9 +1,13 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import styled from "styled-components";
-import { getTweetsActionRequest } from "~actions/Tweets";
+import {
+  getTweetsActionRequest,
+  loadTweetsActionRequest,
+} from "~actions/Tweets";
 import { setSelectedTag } from "~actions/Tag";
-import { TAGS } from "~utils/Constants";
+import { TAGS, REFRESH_INTERVAL } from "~utils/Constants";
+import { useInterval } from "~utils/Hooks";
 
 const Container = styled.div`
   display: flex;
@@ -35,7 +39,7 @@ const Button = styled.button`
 export default () => {
   const dispatch = useDispatch();
   const selectedTag = useSelector((state) => state.selectedTag);
-
+  const lastTweet = useSelector((state) => state.tweets.allIds[0]);
   const selectTag = (tag) => {
     dispatch(setSelectedTag(tag));
   };
@@ -43,7 +47,9 @@ export default () => {
   useEffect(() => {
     dispatch(getTweetsActionRequest(selectedTag));
   }, [dispatch, selectedTag]);
-
+  useInterval(() => {
+    dispatch(loadTweetsActionRequest(selectedTag, lastTweet));
+  }, REFRESH_INTERVAL);
   return (
     <Container>
       {TAGS.map(({ label, value }, i) => (
